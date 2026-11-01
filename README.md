@@ -1,44 +1,75 @@
-Goal : Hands-on preparation for Data Centre Techinician / Infrastructure Operations roles
+# IT Infrastructure & Systems Operations Homelab
 
-# Data Center & Infrastructure Lab
+Personal VMware homelab documenting Linux server administration, networking, application infrastructure, and incident response.
 
-This repository documents my hands-on learning and troubleshooting labs
-for Data Center Technician and Infrastructure Operations roles.
+> These are controlled personal lab exercises, not professional production incidents or work performed for WestJet.
 
-My focus areas include:
+## Lab Environment
 
-- Server hardware troubleshooting
-- Linux server administration
-- Layer 1/2 networking
-- Server break/fix
-- SSH and remote administration
-- RAID and storage
-- BIOS/UEFI and BMC/IPMI
-- Incident troubleshooting
-- Cisco networking
-- Data center operations
+- Ubuntu Server 24.04 LTS on VMware Workstation Pro
+- Bridged networking and SSH remote administration
+- Nginx 1.24.0, Apache Tomcat 10.1.55, OpenJDK 21
+- UFW, Linux service management, and network troubleshooting
 
-## Background
+## Architecture
 
-I have a Computer Science background and software development experience.
-I am expanding my technical experience into data center operations,
-server infrastructure, Linux, and networking.
+```text
+Mac Client -- SSH / HTTP --> Ubuntu Server VM
+                              |-- SSH :22
+                              |-- Nginx :80 (static website)
+                              +-- Nginx :8081 --> Tomcat :8080
+```
 
-## Current Labs
+The reverse proxy on port 8081 was tested locally. Published IP addresses are anonymized examples.
 
-### Server Hardware
-Understanding enterprise server components and hardware failure diagnosis.
+## Completed Technical Chapters
 
-### Linux
-Ubuntu Server administration, SSH, services, logs, and troubleshooting.
+| Chapter | Topic | Documentation |
+|---|---|---|
+| CH01 | Linux Server Setup | [Read Report](ubuntu-server/chapters/CH01-Linux-Server-Setup.md) |
+| CH02 | Network Troubleshooting | [Read Report](ubuntu-server/chapters/CH02-Network-Troubleshooting.md) |
+| CH03 | DNS, TCP & HTTP | [Read Report](ubuntu-server/chapters/CH03-DNS-TCP-HTTP.md) |
+| CH04 | Nginx & Tomcat Reverse Proxy | [Read Report](ubuntu-server/chapters/CH04-Nginx-Tomcat.md) |
 
-### Networking
-Cisco networking fundamentals, VLANs, switching, routing, and connectivity troubleshooting.
+## Incident Response Simulations
 
-### Incident Reports
-Documented troubleshooting scenarios using a structured incident-response process.
+| Incident | Scenario | Outcome | Report |
+|---|---|---|---|
+| INC-0001 | Missing Web Resource | HTTP 404 to 200 | [Read](ubuntu-server/incidents/INC-0001.md) |
+| INC-0002 | Nginx Service Outage | Connection refused to HTTP 200 | [Read](ubuntu-server/incidents/INC-0002.md) |
+| INC-0003 | Tomcat Upstream Failure | HTTP 502 to 200 | [Read](ubuntu-server/incidents/INC-0003.md) |
 
-## Certifications in Progress
+## Documentation Standards
 
-- Cisco CCNA
-- CompTIA Server+
+Each chapter documents the objective, environment, architecture, implementation, testing evidence, troubleshooting, resolution, lessons learned, and interview talking points.
+
+These are controlled homelab exercises, not professional production incidents.
+
+## Roadmap
+
+- [x] Linux server setup and SSH
+- [x] Network, DNS, TCP, and HTTP troubleshooting
+- [x] Nginx and Tomcat reverse proxy
+- [x] Incident simulations INC-0001 through INC-0003
+- [ ] PostgreSQL administration
+- [ ] INC-0004: Database Connection Failure
+- [ ] Oracle Database operations
+- [ ] RHEL administration
+- [ ] VLAN configuration and troubleshooting
+- [ ] High availability and failover
+
+## Professional Development
+
+I have a B.Sc. in Computer Science, a Software Development diploma, and hands-on software engineering experience.
+
+This homelab helps me build practical skills in enterprise IT infrastructure, Linux administration, networking, and incident response.
+
+My goal is to understand how systems work together, identify potential problems early, and improve service reliability.
+
+## Author
+
+**Ryan Back**
+
+- [GitHub](https://github.com/ho0405)
+- [Portfolio](https://ryanback.vercel.app)
+
