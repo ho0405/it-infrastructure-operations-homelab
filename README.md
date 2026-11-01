@@ -31,6 +31,9 @@ The reverse proxy on port 8081 was tested locally. Published IP addresses are an
 | CH03 | DNS, TCP & HTTP | [Read Report](ubuntu-server/chapters/CH03-DNS-TCP-HTTP.md) |
 | CH04 | Nginx & Tomcat Reverse Proxy | [Read Report](ubuntu-server/chapters/CH04-Nginx-Tomcat.md) |
 
+| CH05 | PostgreSQL Database Operations | [Read Report](ubuntu-server/chapters/CH05-PostgreSQL-Database-Operations.md) |
+| CH06 | PostgreSQL Backup and Recovery | [Read Report](ubuntu-server/chapters/CH06-PostgreSQL-Backup-Recovery.md) |
+
 ## Incident Response Simulations
 
 | Incident | Scenario | Outcome | Report |
@@ -38,6 +41,9 @@ The reverse proxy on port 8081 was tested locally. Published IP addresses are an
 | INC-0001 | Missing Web Resource | HTTP 404 to 200 | [Read](ubuntu-server/incidents/INC-0001.md) |
 | INC-0002 | Nginx Service Outage | Connection refused to HTTP 200 | [Read](ubuntu-server/incidents/INC-0002.md) |
 | INC-0003 | Tomcat Upstream Failure | HTTP 502 to 200 | [Read](ubuntu-server/incidents/INC-0003.md) |
+
+| INC-0004 | PostgreSQL Service Outage | Connection refused to restored service | [Read](ubuntu-server/incidents/INC-0004.md) |
+| INC-0005 | Accidental Data Deletion | Five records restored | [Read](ubuntu-server/incidents/INC-0005.md) |
 
 ## Documentation Standards
 
@@ -50,9 +56,11 @@ These are controlled homelab exercises, not professional production incidents.
 - [x] Linux server setup and SSH
 - [x] Network, DNS, TCP, and HTTP troubleshooting
 - [x] Nginx and Tomcat reverse proxy
-- [x] Incident simulations INC-0001 through INC-0003
-- [ ] PostgreSQL administration
-- [ ] INC-0004: Database Connection Failure
+- [x] Incident simulations INC-0001 through INC-0005
+- [x] PostgreSQL administration
+- [x] INC-0004: Database Connection Failure
+- [x] CH06: PostgreSQL Backup and Recovery
+- [x] INC-0005: Accidental Data Deletion
 - [ ] Oracle Database operations
 - [ ] RHEL administration
 - [ ] VLAN configuration and troubleshooting
