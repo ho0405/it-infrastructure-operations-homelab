@@ -73,3 +73,7 @@ My goal is to understand how systems work together, identify potential problems 
 - [GitHub](https://github.com/ho0405)
 - [Portfolio](https://ryanback.vercel.app)
 
+## PostgreSQL Operations and Incident Response
+
+- [CH05 — PostgreSQL Database Operations](ubuntu-server/chapters/CH05-PostgreSQL-Database-Operations.md)
+- [INC-0004 — PostgreSQL Connection Failure](ubuntu-server/incidents/INC-0004.md)
