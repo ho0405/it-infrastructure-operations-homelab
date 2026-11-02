@@ -10,6 +10,7 @@ Personal VMware homelab documenting Linux server administration, networking, app
 - Bridged networking and SSH remote administration
 - Nginx 1.24.0, Apache Tomcat 10.1.55, OpenJDK 21
 - UFW, Linux service management, and network troubleshooting
+- PostgreSQL 16, logical backup automation, and restore verification
 
 ## Architecture
 
@@ -30,9 +31,9 @@ The reverse proxy on port 8081 was tested locally. Published IP addresses are an
 | CH02 | Network Troubleshooting | [Read Report](ubuntu-server/chapters/CH02-Network-Troubleshooting.md) |
 | CH03 | DNS, TCP & HTTP | [Read Report](ubuntu-server/chapters/CH03-DNS-TCP-HTTP.md) |
 | CH04 | Nginx & Tomcat Reverse Proxy | [Read Report](ubuntu-server/chapters/CH04-Nginx-Tomcat.md) |
-
 | CH05 | PostgreSQL Database Operations | [Read Report](ubuntu-server/chapters/CH05-PostgreSQL-Database-Operations.md) |
 | CH06 | PostgreSQL Backup and Recovery | [Read Report](ubuntu-server/chapters/CH06-PostgreSQL-Backup-Recovery.md) |
+| CH07 | PostgreSQL Backup Automation & Monitoring | [Read Report](ubuntu-server/chapters/CH07-PostgreSQL-Backup-Automation-Monitoring.md) |
 
 ## Incident Response Simulations
 
@@ -41,9 +42,9 @@ The reverse proxy on port 8081 was tested locally. Published IP addresses are an
 | INC-0001 | Missing Web Resource | HTTP 404 to 200 | [Read](ubuntu-server/incidents/INC-0001.md) |
 | INC-0002 | Nginx Service Outage | Connection refused to HTTP 200 | [Read](ubuntu-server/incidents/INC-0002.md) |
 | INC-0003 | Tomcat Upstream Failure | HTTP 502 to 200 | [Read](ubuntu-server/incidents/INC-0003.md) |
-
 | INC-0004 | PostgreSQL Service Outage | Connection refused to restored service | [Read](ubuntu-server/incidents/INC-0004.md) |
 | INC-0005 | Accidental Data Deletion | Five records restored | [Read](ubuntu-server/incidents/INC-0005.md) |
+| INC-0006 | PostgreSQL Backup Job Failure | Controlled failure detected and isolated | [Read](ubuntu-server/incidents/INC-0006-PostgreSQL-Backup-Failure.md) |
 
 ## Documentation Standards
 
@@ -61,6 +62,8 @@ These are controlled homelab exercises, not professional production incidents.
 - [x] INC-0004: Database Connection Failure
 - [x] CH06: PostgreSQL Backup and Recovery
 - [x] INC-0005: Accidental Data Deletion
+- [x] CH07: PostgreSQL Backup Automation & Monitoring
+- [x] INC-0006: PostgreSQL Backup Job Failure Simulation
 - [ ] Oracle Database operations
 - [ ] RHEL administration
 - [ ] VLAN configuration and troubleshooting
