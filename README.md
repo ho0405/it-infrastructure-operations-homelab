@@ -92,3 +92,13 @@ My goal is to understand how systems work together, identify potential problems 
 
 - [CH05 — PostgreSQL Database Operations](ubuntu-server/chapters/CH05-PostgreSQL-Database-Operations.md)
 - [INC-0004 — PostgreSQL Connection Failure](ubuntu-server/incidents/INC-0004.md)
+
+## CH09 — Load Balancing, Failover & Recovery
+
+- [CH09 — High Availability, Load Balancing & Failover](ubuntu-server/chapters/CH09-High-Availability-Load-Balancing-Failover.md)
+- [INC-0008 — Backend Failure & Failover](ubuntu-server/incidents/INC-0008-Backend-Failure-Failover.md)
+
+**Lab results:** Nginx load balancing across two backends; 10/10 successful HTTP requests during a simulated backend outage; successful backend recovery and traffic redistribution.
+
+**Scope:** Application-level failover within a single Ubuntu VM, not full infrastructure high availability.
+
