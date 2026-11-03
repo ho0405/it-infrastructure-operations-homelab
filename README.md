@@ -102,3 +102,8 @@ My goal is to understand how systems work together, identify potential problems 
 
 **Scope:** Application-level failover within a single Ubuntu VM, not full infrastructure high availability.
 
+## CH10 — VLAN / Layer 2 Networking
+
+- [CH10 — VLAN and Layer 2 Networking](ubuntu-server/chapters/CH10-VLAN-Layer2-Networking.md)
+
+Configured VLAN 10/20 segmentation, validated same-VLAN connectivity and cross-VLAN isolation, and tested an IEEE 802.1Q trunk in a Linux homelab.
