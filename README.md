@@ -34,6 +34,7 @@ The reverse proxy on port 8081 was tested locally. Published IP addresses are an
 | CH05 | PostgreSQL Database Operations | [Read Report](ubuntu-server/chapters/CH05-PostgreSQL-Database-Operations.md) |
 | CH06 | PostgreSQL Backup and Recovery | [Read Report](ubuntu-server/chapters/CH06-PostgreSQL-Backup-Recovery.md) |
 | CH07 | PostgreSQL Backup Automation & Monitoring | [Read Report](ubuntu-server/chapters/CH07-PostgreSQL-Backup-Automation-Monitoring.md) |
+| CH08 | Linux Monitoring, Logs & Alerting | [Read Report](ubuntu-server/chapters/CH08-Linux-Monitoring-Logs-Alerting.md) |
 
 ## Incident Response Simulations
 
@@ -45,6 +46,7 @@ The reverse proxy on port 8081 was tested locally. Published IP addresses are an
 | INC-0004 | PostgreSQL Service Outage | Connection refused to restored service | [Read](ubuntu-server/incidents/INC-0004.md) |
 | INC-0005 | Accidental Data Deletion | Five records restored | [Read](ubuntu-server/incidents/INC-0005.md) |
 | INC-0006 | PostgreSQL Backup Job Failure | Controlled failure detected and isolated | [Read](ubuntu-server/incidents/INC-0006-PostgreSQL-Backup-Failure.md) |
+| INC-0007 | Infrastructure Health Check Failure | Controlled failure detected by systemd | [Read](ubuntu-server/incidents/INC-0007-Infrastructure-Health-Check-Failure.md) |
 
 ## Documentation Standards
 
@@ -64,6 +66,8 @@ These are controlled homelab exercises, not professional production incidents.
 - [x] INC-0005: Accidental Data Deletion
 - [x] CH07: PostgreSQL Backup Automation & Monitoring
 - [x] INC-0006: PostgreSQL Backup Job Failure Simulation
+- [x] CH08: Linux Monitoring, Logs & Alerting
+- [x] INC-0007: Infrastructure Health Check Failure Simulation
 - [ ] Oracle Database operations
 - [ ] RHEL administration
 - [ ] VLAN configuration and troubleshooting
