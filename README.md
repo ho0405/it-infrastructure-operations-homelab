@@ -107,3 +107,36 @@ My goal is to understand how systems work together, identify potential problems 
 - [CH10 — VLAN and Layer 2 Networking](ubuntu-server/chapters/CH10-VLAN-Layer2-Networking.md)
 
 Configured VLAN 10/20 segmentation, validated same-VLAN connectivity and cross-VLAN isolation, and tested an IEEE 802.1Q trunk in a Linux homelab.
+
+## CH11 — ITSM, Incident & Change Management
+
+Practiced IT service management workflows using a
+simulated airport check-in application on Ubuntu Server.
+
+### Technical Exercises
+
+- Created and managed a systemd application service
+- Simulated an application outage using a controlled service stop
+- Investigated service status, listening ports, and systemd logs
+- Restored service availability and verified HTTP 200 responses
+- Documented incident priority, escalation, and SLA concepts
+- Prepared stakeholder and vendor communication templates
+- Created a change request with risk assessment and rollback plan
+- Deployed an application health endpoint update
+- Investigated an initial post-restart connection failure
+- Restored the original application version from a verified backup
+- Confirmed service health and file integrity after rollback
+
+### Documentation
+
+- [INC-0009 — Application Incident](ubuntu-server/itsm/INC-0009-Checkin-Application-Incident.md)
+- [SLA & Escalation Matrix](ubuntu-server/itsm/SLA-Escalation-Matrix.md)
+- [Incident Communication Runbook](ubuntu-server/itsm/Incident-Communication-Runbook.md)
+- [CHG-0001 — Change and Rollback](ubuntu-server/itsm/CHG-0001-Checkin-Service-Change.md)
+- [Check-in Simulator Source](ubuntu-server/itsm/checkin-simulator/server.py)
+
+### Scope
+
+All exercises were performed in a personal homelab.
+No production airport systems, users, or vendors were involved.
+SLA targets and incident scenarios are hypothetical.
