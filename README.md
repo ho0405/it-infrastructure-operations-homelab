@@ -140,3 +140,41 @@ simulated airport check-in application on Ubuntu Server.
 All exercises were performed in a personal homelab.
 No production airport systems, users, or vendors were involved.
 SLA targets and incident scenarios are hypothetical.
+
+## CH12 — Database Connectivity & Authentication Troubleshooting
+
+Investigated PostgreSQL connectivity and authentication
+failures in a controlled Ubuntu Server homelab.
+
+### Technical Exercises
+
+- Verified PostgreSQL 16 cluster health and service status
+- Investigated TCP connectivity using ss, nc, and pg_isready
+- Compared successful connections on port 5432 with connection failures on port 5433
+- Examined peer and SCRAM-SHA-256 authentication rules
+- Created a temporary PostgreSQL login role
+- Verified successful authentication using valid credentials
+- Reproduced password authentication failures
+- Analyzed PostgreSQL logs and pg_hba.conf authentication rules
+- Resolved role deletion dependencies using REVOKE
+- Removed the temporary test account
+- Verified database health and SQL execution after cleanup
+
+### Documentation
+
+- [INC-0010 — PostgreSQL Connectivity & Authentication Troubleshooting](ubuntu-server/database/INC-0010-PostgreSQL-Connectivity-Authentication.md)
+
+### Key Lessons
+
+- TCP connectivity and database authentication are separate troubleshooting layers
+- Connection refused does not necessarily indicate a database service outage
+- Database logs help identify authentication failures
+- Database roles may have privilege dependencies that prevent deletion
+- Troubleshooting should identify the root cause before restarting services
+
+### Scope
+
+All exercises were conducted in a personal VMware homelab.
+PostgreSQL 16 was used for hands-on testing.
+Oracle Database was not installed or tested.
+No production database systems were involved.
